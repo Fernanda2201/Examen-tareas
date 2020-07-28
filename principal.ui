@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Principal</class>
+ <widget class="QMainWindow" name="Principal">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>451</width>
+    <height>290</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Tareas</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="Recuros.qrc">
+    <normaloff>:/Iconos/notas (1).png</normaloff>:/Iconos/notas (1).png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QFormLayout" name="formLayout_2">
+    <item row="1" column="0">
+     <layout class="QFormLayout" name="formLayout">
+      <item row="0" column="0">
+       <widget class="QPushButton" name="pushButton">
+        <property name="styleSheet">
+         <string notr="true">
+background-color: rgb(229, 234, 255);</string>
+        </property>
+        <property name="text">
+         <string>Agregar</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <spacer name="horizontalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </item>
+    <item row="2" column="0">
+     <spacer name="verticalSpacer">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="0" column="0" colspan="2">
+     <widget class="QTableWidget" name="tableWidget">
+      <property name="styleSheet">
+       <string notr="true">backgroung-image url(:/Iconos/educacion.png);</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>451</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuArchivo">
+    <property name="title">
+     <string>Archivo</string>
+    </property>
+    <addaction name="actionGuardar"/>
+    <addaction name="actionSalir"/>
+   </widget>
+   <addaction name="menuArchivo"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionSalir">
+   <property name="icon">
+    <iconset resource="Recuros.qrc">
+     <normaloff>:/Iconos/logout.png</normaloff>:/Iconos/logout.png</iconset>
+   </property>
+   <property name="text">
+    <string>Salir</string>
+   </property>
+  </action>
+  <action name="actionGuardar">
+   <property name="icon">
+    <iconset resource="Recuros.qrc">
+     <normaloff>:/Iconos/educacion.png</normaloff>:/Iconos/educacion.png</iconset>
+   </property>
+   <property name="text">
+    <string>Guardar</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="Recuros.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>actionSalir</sender>
+   <signal>triggered(bool)</signal>
+   <receiver>Principal</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>225</x>
+     <y>144</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
