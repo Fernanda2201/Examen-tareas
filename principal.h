@@ -2,6 +2,7 @@
 #define PRINCIPAL_H
 
 #include <QMainWindow>
+#include <QTableWidgetItem>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class Principal; }
@@ -20,7 +21,10 @@ private slots:
 
     void on_actionGuardar_triggered();
 
+    void on_pushButton_2_clicked();
+
 private:
     Ui::Principal *ui;
+
 };
 #endif // PRINCIPAL_H

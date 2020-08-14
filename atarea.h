@@ -21,10 +21,12 @@ public:
     int prioridad() const;
     QDate dates() const;
     QString tipo() const;
+
 private slots:
     void on_buttonBox_accepted();
 
     void on_buttonBox_rejected();
+
 
 private:
     Ui::Atarea *ui;

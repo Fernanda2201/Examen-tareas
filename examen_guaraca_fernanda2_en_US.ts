@@ -54,23 +54,33 @@
     </message>
     <message>
         <location filename="atarea.ui" line="115"/>
-        <source>Prioridad:</source>
-        <translation>Priority:</translation>
+        <source>Prioridad</source>
+        <oldsource>Prioridad:</oldsource>
+        <translation>Priority</translation>
     </message>
     <message>
-        <location filename="atarea.ui" line="123"/>
+        <location filename="atarea.ui" line="121"/>
+        <source>Alta</source>
+        <translation>High</translation>
+    </message>
+    <message>
+        <location filename="atarea.ui" line="135"/>
+        <source>Baja</source>
+        <translation>Down</translation>
+    </message>
+    <message>
         <source>1. Alto</source>
-        <translation>1. High</translation>
+        <translation type="vanished">1. High</translation>
     </message>
     <message>
         <location filename="atarea.ui" line="128"/>
-        <source>2. Medio</source>
-        <translation>2. Medium</translation>
+        <source>Media</source>
+        <oldsource>2. Medio</oldsource>
+        <translation>Medium</translation>
     </message>
     <message>
-        <location filename="atarea.ui" line="133"/>
         <source>3. Bajo</source>
-        <translation>3. Down</translation>
+        <translation type="vanished">3. Down</translation>
     </message>
 </context>
 <context>
@@ -85,19 +95,35 @@
         <translation>Task</translation>
     </message>
     <message>
-        <location filename="principal.ui" line="31"/>
+        <location filename="principal.ui" line="42"/>
+        <location filename="principal.ui" line="151"/>
         <source>Agregar</source>
         <translation>Add</translation>
     </message>
     <message>
         <location filename="principal.ui" line="83"/>
+        <source>Finalizar</source>
+        <translation>Finalize</translation>
+    </message>
+    <message>
+        <location filename="principal.ui" line="115"/>
         <source>Archivo</source>
         <translation>Archive</translation>
     </message>
     <message>
-        <location filename="principal.ui" line="96"/>
+        <location filename="principal.ui" line="125"/>
+        <source>toolBar</source>
+        <translation>toolBar</translation>
+    </message>
+    <message>
+        <location filename="principal.ui" line="142"/>
         <source>Salir</source>
         <translation>Exit</translation>
+    </message>
+    <message>
+        <location filename="principal.cpp" line="125"/>
+        <source>Fila eliminada</source>
+        <translation>Delete row</translation>
     </message>
 </context>
 </TS>

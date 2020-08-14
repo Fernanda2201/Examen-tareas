@@ -6,27 +6,27 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>340</width>
-    <height>184</height>
+    <width>369</width>
+    <height>266</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Tareas</string>
   </property>
-  <layout class="QFormLayout" name="formLayout_5">
+  <layout class="QFormLayout" name="formLayout">
    <item row="0" column="0" colspan="2">
-    <widget class="QGroupBox" name="groupBox">
+    <widget class="QGroupBox" name="groupBox_3">
      <property name="styleSheet">
-      <string notr="true">background-color: rgb(255, 247, 249);</string>
+      <string notr="true">background-color: rgb(209, 244, 200);</string>
      </property>
      <property name="title">
       <string>Agregar Tarea</string>
      </property>
      <layout class="QVBoxLayout" name="verticalLayout">
       <item>
-       <layout class="QFormLayout" name="formLayout">
+       <layout class="QFormLayout" name="formLayout_4">
         <item row="0" column="0">
-         <widget class="QLabel" name="label">
+         <widget class="QLabel" name="label_4">
           <property name="text">
            <string>Nombre:</string>
           </property>
@@ -38,9 +38,9 @@
        </layout>
       </item>
       <item>
-       <layout class="QFormLayout" name="formLayout_2">
+       <layout class="QFormLayout" name="formLayout_6">
         <item row="0" column="0">
-         <widget class="QLabel" name="label_2">
+         <widget class="QLabel" name="label_5">
           <property name="text">
            <string>Fecha:</string>
           </property>
@@ -73,9 +73,9 @@
        </layout>
       </item>
       <item>
-       <layout class="QFormLayout" name="formLayout_3">
+       <layout class="QFormLayout" name="formLayout_7">
         <item row="0" column="0">
-         <widget class="QLabel" name="label_3">
+         <widget class="QLabel" name="label_6">
           <property name="text">
            <string>Tipo:</string>
           </property>
@@ -108,31 +108,35 @@
        </layout>
       </item>
       <item>
-       <layout class="QFormLayout" name="formLayout_4">
-        <item row="0" column="0">
-         <widget class="QLabel" name="label_4">
-          <property name="text">
-           <string>Prioridad:</string>
-          </property>
-         </widget>
-        </item>
+       <layout class="QFormLayout" name="formLayout_8">
         <item row="0" column="1">
-         <widget class="QComboBox" name="inPrioridad">
-          <item>
-           <property name="text">
-            <string>1. Alto</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>2. Medio</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>3. Bajo</string>
-           </property>
-          </item>
+         <widget class="QGroupBox" name="groupBox_2">
+          <property name="title">
+           <string>Prioridad</string>
+          </property>
+          <layout class="QFormLayout" name="formLayout_5">
+           <item row="0" column="0">
+            <widget class="QRadioButton" name="inAlta">
+             <property name="text">
+              <string>1. Alta</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QRadioButton" name="inMedia">
+             <property name="text">
+              <string>2. Media</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QRadioButton" name="inBaja">
+             <property name="text">
+              <string>3. Baja</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
          </widget>
         </item>
        </layout>
